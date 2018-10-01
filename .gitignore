@@ -1,0 +1,5 @@
+.Rhistory
+test/
+train/
+*.txt
+averages.csv
