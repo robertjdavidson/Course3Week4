@@ -24,7 +24,7 @@ yFinal <- rbind(yTrain, yTest)
 
 # Load activity labels and merge with Y data
 activities <- read.table("activity_labels.txt", header = FALSE, col.names = c("id", "activity"))
-yFinal = merge(yFinal, activities, by.x = "activity.id", by.y = "id")
+yFinal = inner_join(yFinal, activities, by = c("activity.id" = "id"))
 
 # Load and combine subject data
 subjectTrain <- read.table("train/subject_train.txt", header = FALSE, col.names = c("subject"))
