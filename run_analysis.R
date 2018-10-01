@@ -17,7 +17,7 @@ xFinal <- rbind(xTrain, xTest)
 columnIndexes <- filter(features, grepl("mean|std", features$feature))$id
 meanAndStdFinal <- select(xFinal, columnIndexes)
 
-#Load and combine Y data
+# Load and combine Y data
 yTrain <- read.table("train/y_train.txt", header = FALSE, col.names = c("activity.id"))
 yTest <- read.table("test/y_test.txt", header = FALSE, col.names = c("activity.id"))
 yFinal <- rbind(yTrain, yTest)
