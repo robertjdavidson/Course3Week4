@@ -36,6 +36,6 @@ dt <- cbind(subjectFinal, yFinal, meanAndStdFinal)
 dt <- arrange(dt, subject, activity.id)
 
 # Create a second, independent tidy data set with the average of each variable for each activity and each subject.
-dt2 <- dt %>% group_by(subject, activity.id) %>% summarise_at(vars(4:82), mean)
+dt2 <- dt %>% group_by(subject, activity) %>% summarise_at(vars(4:82), mean)
 write.table(dt2, "averages.txt")
 write.csv(dt2, "averages.csv")
