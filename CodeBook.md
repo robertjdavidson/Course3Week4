@@ -16,8 +16,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 Only the mean and std dev data is retained. The following variables are found in the data table produced by the script:
 
 subject (the ID of the subject: 1-30)
-activity.id (the ID of the activity: 1-6)	
-activity (the name of the activity)
+activity (the name of the activity: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING or LAYING)
 
 The remaining variables are the various mean and std dev readings from the smartphone accelerometer and gyroscope and have a value between -1 and +1.
 * tBodyAcc.mean.X
